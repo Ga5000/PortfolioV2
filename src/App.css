@@ -26,17 +26,11 @@
     margin-top: 40px;
     overflow-y: auto;
     height: calc(100vh - 60px);
+    scroll-behavior: smooth;
 }
-
 .sub-content::-webkit-scrollbar {
-    width: 8px;
+    display: none;
 }
-
-.sub-content::-webkit-scrollbar-thumb {
-    background: rgba(5, 91, 26, 0.4);
-    border-radius: 4px;
-}
-
 body {
     overflow: hidden;
 }

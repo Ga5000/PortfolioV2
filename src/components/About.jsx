@@ -2,7 +2,7 @@ import '/src/styles/About.css';
 
 function About() {
     return (
-        <div className="about">
+        <div className="about" id="about">
             <p>
                 I’m currently studying <span>Computer Science</span>, and my passion for technology grows stronger every day.
                 My main focus is on the <span> Java programming language and the Spring Boot framework </span>, which I have been studying and coding with for two years.
