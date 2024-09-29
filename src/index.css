@@ -1,0 +1,12 @@
+:root {
+    --tw-bg-opacity: 1;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    box-sizing: border-box;
+    background-size: cover;
+    background: linear-gradient(135deg, rgba(15, 43, 22, var(--tw-bg-opacity)) 30%, rgba(34, 167, 94, var(--tw-bg-opacity)) 100%) center;
+}
