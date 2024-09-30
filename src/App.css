@@ -24,13 +24,10 @@
     max-width: 800px;
     margin-left: 50px;
     margin-top: 40px;
-    overflow-y: auto;
-    height: calc(100vh - 60px);
+    overflow-y: scroll;
+    height: calc(100vh - 150px);
     scroll-behavior: smooth;
 }
 .sub-content::-webkit-scrollbar {
-    display: none;
-}
-body {
-    overflow: hidden;
+   display: none;
 }

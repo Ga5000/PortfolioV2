@@ -2,7 +2,7 @@ import '/src/styles/Experience.css';
 
 function Experience() {
     return (
-        <div className="experience">
+        <div className="experience" id='experience'>
             <div className="experience__wrapper">
                 <h2 className="timestamp">2023 - Present</h2>
                 <div className="title-text">

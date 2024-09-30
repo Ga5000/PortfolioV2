@@ -23,6 +23,7 @@ function App() {
              <Projects/>
          </div>
      </div>
+        <div className="add"></div>
     </>
   )
 }
