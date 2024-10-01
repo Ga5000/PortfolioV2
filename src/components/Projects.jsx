@@ -89,8 +89,7 @@ function Projects() {
                 </div>
                 <div className="project-card-content">
                 <p className="project-description">
-                        Sudoku solver create to enhance my skills and programming logic. It uses Java 20 and it&#39;s
-                        libraries.
+                        Version One of my portfolio. Created to show my projects and skills.
                     </p>
                     <ul className="project-technologies">
                         <li>React</li>
