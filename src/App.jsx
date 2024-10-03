@@ -9,7 +9,7 @@ import Projects from "./components/Projects.jsx";
 
 function App() {
   return (
-    <>
+
      <div className="main">
       <div className="main-content">
           <Header />
@@ -23,8 +23,6 @@ function App() {
              <Projects/>
          </div>
      </div>
-        <div className="add"></div>
-    </>
   )
 }
 
