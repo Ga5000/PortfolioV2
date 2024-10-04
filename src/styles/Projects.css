@@ -79,6 +79,7 @@
 .project-technologies li {
     font-family: 'Inter',monospace;
     background-color: transparent;
+    font-weight: bold;
     color: #fff;
     padding: 8px 12px;
     border-radius: 16px;
@@ -89,5 +90,6 @@
 
 .project-technologies li:hover {
     color: #34c759;
+
     cursor: default;
 }

@@ -18,7 +18,8 @@ function Projects() {
                 <div className="project-card-content">
                     <p className="project-description">
                         REST API created to enhance my skills and learn more about Spring. It uses Spring Security with
-                        JWT for authentication.
+                        JWT for authentication. Users will receive e-mails when an appointment is made, cancelled and
+                        they will also receive reminders.
                     </p>
                     <ul className="project-technologies">
                         <li>Spring</li>
