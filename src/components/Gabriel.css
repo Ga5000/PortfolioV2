@@ -1,0 +1,55 @@
+.profile {
+    margin: 100px;
+    margin-top: 150px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    font-family: 'Roboto', monospace;
+}
+
+.main-title {
+    font-size: 3.5em;
+    color: #000;
+    margin: 0;
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+.sub-title {
+    font-size: 2em;
+    color: #f1f1f1;
+    font-weight: 500;
+    margin-top: -5px;
+    margin-right: 50px;
+}
+
+
+.social {
+    display: flex;
+    gap: 15px;
+    margin-top: -10px;
+    margin-right: 200px;
+}
+
+.social a {
+    display: inline-block;
+    transition: transform 0.2s ease-in-out;
+}
+
+.social img {
+    width: 50px;
+    transition: opacity 0.3s, transform 0.3s;
+}
+
+.social img:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+}
