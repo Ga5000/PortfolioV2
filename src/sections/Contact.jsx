@@ -3,8 +3,10 @@ import { User, Mail, MessageSquare, Send } from "lucide-react";
 import emailjs from "emailjs-com";
 import DOMPurify from "dompurify";
 import "../styles/Contact.css";
+import detectLanguage from "../util";
 
 const Contact = () => {
+  const language = detectLanguage();
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -40,10 +42,18 @@ const Contact = () => {
         import.meta.env.VITE_EMAILJS_USER_ID
       );
 
-      setStatus("Message sent successfully!");
+      setStatus(
+        language === "en"
+          ? "Message sent successfully!"
+          : "Mensagem enviada com sucesso!"
+      );
       setFormData({ name: "", email: "", message: "" });
     } catch (error) {
-      setStatus("Something went wrong. Please try again.");
+      setStatus(
+        language === "en"
+          ? "Something went wrong. Please try again."
+          : "Algo deu errado. Por favor, tente novamente."
+      );
     } finally {
       setIsSubmitting(false);
     }
@@ -52,14 +62,22 @@ const Contact = () => {
   return (
     <section className="contact-section" id="contact-section">
       <form className="contact-form" onSubmit={handleSubmit}>
-        <h2 className="form-title">Let's talk</h2>
-        <p className="form-description">I'd love to hear from you!</p>
+        <h2 className="form-title">
+          {language === "en" ? "Let's talk" : "Vamos conversar"}
+        </h2>
+        <p className="form-description">
+          {language === "en"
+            ? "I'd love to hear from you!"
+            : "Adoraria ouvir de você!"}
+        </p>
         <div className="form-group">
           <User className="form-icon" />
           <input
             type="text"
             name="name"
-            placeholder="Your Name"
+            placeholder={
+              language === "en" ? "Your Name" : "Seu Nome"
+            }
             value={formData.name}
             onChange={handleInputChange}
             required
@@ -71,7 +89,9 @@ const Contact = () => {
           <input
             type="email"
             name="email"
-            placeholder="Your Email"
+            placeholder={
+              language === "en" ? "Your Email" : "Seu Email"
+            }
             value={formData.email}
             onChange={handleInputChange}
             required
@@ -82,7 +102,9 @@ const Contact = () => {
           <MessageSquare className="form-icon" />
           <textarea
             name="message"
-            placeholder="Your Message"
+            placeholder={
+              language === "en" ? "Your Message" : "Sua Mensagem"
+            }
             value={formData.message}
             onChange={handleInputChange}
             required
@@ -90,7 +112,8 @@ const Contact = () => {
           />
         </div>
         <button type="submit" className="form-button" disabled={isSubmitting}>
-          Send Message <Send className="button-icon" />
+          {language === "en" ? "Send Message" : "Enviar Mensagem"}{" "}
+          <Send className="button-icon" />
         </button>
         {status && <p className="form-status">{status}</p>}
       </form>

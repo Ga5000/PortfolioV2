@@ -1,4 +1,4 @@
-/* Section styles */
+
 #skills-section {
   color: #fff;
   padding: 50px 0;
@@ -8,18 +8,18 @@
   transition: opacity 0.6s ease, transform 0.6s ease;
 }
 
-/* Animation class */
+
 #skills-section.fade-in {
   opacity: 1;
   transform: translateY(0);
 }
 
-h1 {
+.skills-title {
   text-align: center;
   font-family: var(--font-family-roboto);
   font-size: 2rem;
   margin-bottom: 40px;
-  margin-right: 850px;
+  margin-right: 1000px;
 }
 
 .skills-container {

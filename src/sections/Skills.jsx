@@ -1,8 +1,10 @@
 import React, { useEffect, useRef } from 'react';
 import '../styles/Skills.css';
+import detectLanguage from '../util';
 
 const Skills = () => {
   const skillsRef = useRef(null);
+  const language = detectLanguage();
 
   const skills = [
     { image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg", name: 'Java' },
@@ -41,7 +43,7 @@ const Skills = () => {
 
   return (
     <section className="skills" id="skills-section" ref={skillsRef}>
-      <h1>Languages, Tools, Frameworks</h1>
+      <h1 className='skills-title'>{language == 'en' ? "Working Tools" : "Ferramentas de Trabalho"}</h1>
       <div className="skills-container">
         {skills.map((skill, index) => (
           <div key={index} className="skill-card">
