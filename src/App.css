@@ -1,3 +1,25 @@
-.main{
-    display: flex;
+*{
+    margin: 0;
+    padding: 0;
 }
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 180vh;
+    background: #000;
+    box-sizing: border-box;
+}
+
+.app-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
+  }
+  
+  section {
+    width: 100%;
+  }
+  
+

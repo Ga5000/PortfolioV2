@@ -1,8 +1,6 @@
-body {
-    width: auto;
-    height: auto; 
-    box-sizing: border-box;
-    background: linear-gradient(45deg, #38ef7d, #11998e);
-    background-repeat: no-repeat; 
-    background-size: cover; 
-}
+:root {
+ --font-family-roboto   : 'Roboto', sans-serif;
+  }
+  
+
+  

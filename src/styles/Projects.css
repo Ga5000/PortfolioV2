@@ -1,0 +1,39 @@
+#projects-section {
+    color: #ffffff;
+    margin-top: 680px;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+#projects-section.animate {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#projects-section h1 {
+    font-family: var(--font-family-roboto);
+    font-size: 3em;
+    margin-right: 1100px;
+}
+
+#projects-section .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 80px;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 70px;
+}
+
+
+.container .card {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.container .card.animate {
+    opacity: 1;
+    transform: translateY(0);
+}

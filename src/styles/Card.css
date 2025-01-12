@@ -1,0 +1,58 @@
+.card {
+  font-family: var(--font-family-roboto);
+  background-color: #1a1a1a;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 255, 30, 0.1);
+  transition: all 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.card.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.card:hover {
+  box-shadow: 0 8px 12px rgba(89, 255, 0, 0.2);
+  transition: box-shadow 0.4s ease;
+}
+
+.title-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.title-link h2 {
+  color: white;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.description {
+  color: #d1d1d1;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.stack {
+  background-color: rgba(50, 205, 50, 0.1);
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+}
+
+.tech {
+  color: #32cd32;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
